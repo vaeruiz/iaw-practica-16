@@ -24,7 +24,7 @@ Empezaremos creando el dockerfile, este archivo es el que define como será nues
 
 Después crearemos el archivo yml para docker-compose, este archivo también se encontrará en el repositorio.
 
-Hay que tener en cuenta que en la imagen mysql del yml deberemos de crear un volumen llamado ./sql:/docker-entrypoint-initdb.d ya que este volumen nos va a permitir hacer uso del sql creado para la aplicación web y guardar sus datos.
+Hay que tener en cuenta que en el yml deberemos de crear un volumen para mysql llamado ./sql:/docker-entrypoint-initdb.d para que nos guarde los datos de la aplicación en las tablas correspondientes.
 
 Como paso final, crearemos el archivo env que tendrá todas las variables del contenedor MySQL.
 
